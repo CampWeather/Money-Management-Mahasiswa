@@ -50,6 +50,31 @@
                     <button type="submit">Tambah transaksi</button>
                 </form>
 
+            </section>
+            <section class="panel">
+                <div class="atas-riwayat">
+                    <h2>Riwayat transaksi</h2>
+                    <select id="filter" aria-label="Filter jenis transaksi">
+                        <option value="semua">Semua</option>
+                        <option value="pemasukan">Pemasukan</option>
+                        <option value="pengeluaran">Pengeluaran</option>
+                    </select>
+                </div>
+                <ul id="daftar"></ul>
+            </section>
+
+            <section class="panel">
+                <div class="Transaksi-bulanan">
+                    <h2>Jatah Harian</h2>
+                    <p id="nama-bulan" class="bulan"></p>
+                    <div id="panel-jatah-baru">
+                        <div class="jatah">
+                            <p>Jatah harian</p>
+                            <strong id="nilai-jatah-baru">Rp 0</strong>
+                        </div>
+                        <p id="status-jatah-baru" class="peringatan" role="status" aria-live="polite" style="margin-top:16px;color:#22654d">Pengeluaran sehat</p></div>
+                </div>
+            </section>
         </div>
         <footer></footer>
     </main>
