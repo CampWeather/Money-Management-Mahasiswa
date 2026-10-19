@@ -237,25 +237,6 @@ footer {
     color: var(--utama)
 }
 
-dl {
-    margin: 18px 0
-}
-
-dl div {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 9px 0;
-    border-bottom: 1px solid var(--garis);
-    font-size: .9rem
-}
-
-dd {
-    margin: 0;
-    text-align: right;
-    font-weight: bold
-}
-
 .peringatan {
     padding: 12px;
     background: #edf5ef;
@@ -265,4 +246,15 @@ dd {
 .peringatan.bahaya {
     background: #fff0e9;
     color: #963d2c
+}
+#panel-jatah-baru .peringatan {
+    margin-top: 16px
+}
+
+.Transaksi-bulanan .bulan {
+    margin-top: 4px
+}
+
+.pesan.error {
+    color: #ad493b
 }
