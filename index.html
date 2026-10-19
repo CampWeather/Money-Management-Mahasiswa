@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keuangan Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Catatan Keuangan Mahasiswa</h1>
+        </header>
+        <section class="ringkasan" aria-label="Ringkasan keuangan">
+            <div class="kartu">
+                <p>Saldo saat ini</p><strong id="saldo">Rp 0</strong>
+            </div>
+            <div class="kartu">
+                <p>Total pemasukan</p><strong id="masuk" class="pemasukan">Rp 0</strong>
+            </div>
+            <div class="kartu">
+                <p>Total pengeluaran</p><strong id="keluar" class="pengeluaran">Rp 0</strong>
+            </div>
+        </section>
+        <div class="konten">
+            <section class="panel">
+                <h2>Tambah transaksi</h2>
+                <form id="form-transaksi">
+                    <label for="keterangan">Keterangan</label>
+                    <input id="keterangan">
+                    <label for="jumlah">Jumlah (Rp)</label>
+                    <input id="jumlah" type="number">
+                    <label for="tanggal">Tanggal</label>
+                    <input id="tanggal" type="date">
+                    <label for="jenis">Jenis transaksi</label>
+                    <select id="jenis">
+                        <option value="pemasukan">Pemasukan</option>
+                        <option value="pengeluaran">Pengeluaran</option>
+                    </select>
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori">
+                        <option value="gajian">Gajian</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="transportasi">Transportasi</option>
+                        <option value="hiburan">Hiburan</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                    <button type="submit">Tambah transaksi</button>
+                </form>
+
+        </div>
+        <footer></footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
